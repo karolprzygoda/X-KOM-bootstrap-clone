@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script
+      defer
+      src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+    ></script>
+    <script defer src="src/validation.js"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Formularz Rejestracji</title>
+  </head>
+  <body class="bg-white">
+    <!--  Header and main container  -->
+    <div class="mx-3 mx-lg-0">
+      <!-- Header  -->
+      <header class="container ps-0 mt-3 pb-1 border-bottom section mb-5">
+        <h1 class="fw-bold text-uppercase brand-title">cyberzone</h1>
+      </header>
+      <!-- Main  -->
+      <main class="container">
+        <div class="row">
+          <!-- Form section  -->
+          <section class="section container px-0 mb-5 col-lg-5">
+            <div class="form__container rounded-4 box-shadow p-4">
+              <h2 class="mb-4">Zarejestruj się</h2>
+              <!--   Form  -->
+              <form class="needs-validation" action="" novalidate>
+                <div class="form-floating mb-3 has-validation">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingName"
+                    name="floatingName"
+                    placeholder="Twoje imię (wymagane)"
+                    required
+                  />
+                  <label class="text-secondary" for="floatingName"
+                    >Twoje imię (wymagane)</label
+                  >
+                  <div class="invalid-feedback">Proszę wprowadzić imię.</div>
+                </div>
+                <div class="form-floating mb-3 has-validation">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingMail"
+                    placeholder="Twój adres mailowy (wymagane)"
+                    required
+                  />
+                  <label class="text-secondary" for="floatingMail"
+                    >Twój adres mailowy (wymagane)</label
+                  >
+                  <div class="invalid-feedback">
+                    Proszę wprowadzić adres Mailowy.
+                  </div>
+                </div>
+                <div class="form-floating mb-3 has-validation">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="floatingPassword"
+                    placeholder="Hasło (wymagane)"
+                    required
+                  />
+                  <label class="text-secondary" for="floatingPassword"
+                    >Hasło (wymagane)</label
+                  >
+                  <div class="invalid-feedback">Proszę wprowadzić hasło.</div>
+                </div>
+                <select
+                  class="form-select form-select mb-4"
+                  aria-label="Select gender"
+                >
+                  <option disabled selected>Wybierz płeć</option>
+                  <option value="1">Wole nie podawać</option>
+                  <option value="2">Mężczyzna</option>
+                  <option value="3">Kobieta</option>
+                </select>
+                <h3 class="mb-4 fs-5">Zgody formalne</h3>
+                <div class="form-check form-switch mb-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="personalizedAds"
+                    value="agreed"
+                  />
+                  <label class="form-check-label" for="personalizedAds"
+                    >Wyrażam zgodę na spersonalizowane reklamy</label
+                  >
+                </div>
+                <div class="form-check form-switch mb-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="promotionsInfo"
+                    value="agreed"
+                  />
+                  <label class="form-check-label" for="promotionsInfo"
+                    >Chce otrzymywać informacje o promocjach</label
+                  >
+                </div>
+                <div class="form-check form-switch mb-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="personalizedOffers"
+                    value="agreed"
+                  />
+                  <label class="form-check-label" for="personalizedOffers"
+                    >Chce otrzymywać ofertę dopasowaną do moich potrzeb</label
+                  >
+                </div>
+                <div class="form-check mb-4 ms-2 has-validation">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="agreed"
+                    id="regulations"
+                    required
+                  />
+                  <label class="form-check-label ms-2" for="regulations">
+                    Akceptuje regulamin i warunki użytkowania
+                    <span class="text-danger">*</span>
+                  </label>
+                  <div class="invalid-feedback">
+                    Musisz zaakceptować regulamin, aby móc się zarejestrować.
+                  </div>
+                </div>
+                <div>
+                  <button class="btn btn-primary w-100 mb-3" type="submit">
+                    Zarejestruj się
+                  </button>
+                </div>
+                <p class="text-center mb-0">
+                  masz juz konto ?
+                  <a
+                    class="text-primary link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                    href="#"
+                    >Zaloguj się</a
+                  >
+                </p>
+              </form>
+            </div>
+          </section>
+          <!-- Is it worth it section  -->
+          <section class="container mb-5 col-lg-5 mt-lg-5">
+            <h3 class="fs-5 mb-4">Dlaczego warto mieć konto w cyberzone</h3>
+            <ul class="list-unstyled">
+              <li class="mb-3 d-flex align-items-center">
+                <img src="assets/form-assets/4.svg" class="me-3" alt="icon-1" />
+                <p class="d-inline mb-0">zamawiaj szybciej</p>
+              </li>
+              <li class="mb-3 d-flex align-items-center">
+                <img src="assets/form-assets/3.svg" class="me-3" alt="icon-2" />
+                <p class="d-inline mb-0">sprawdzaj poprzednie zamówienia</p>
+              </li>
+              <li class="mb-3 d-flex align-items-center">
+                <img src="assets/form-assets/1.svg" class="me-3" alt="icon-3" />
+                <p class="d-inline mb-0">śledź status zamówienia</p>
+              </li>
+              <li class="mb-3 d-flex align-items-center">
+                <img src="assets/form-assets/2.svg" class="me-3" alt="icon-4" />
+                <p class="d-inline mb-0">korzystaj z rabatów i promocji</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+    </div>
+    <!-- Footer  -->
+    <footer class="border-top container px-3 px-md-0">
+      <div class="d-flex align-items-center flex-wrap mt-3 border-bottom pb-3">
+        <div class="d-flex align-items-center me-3">
+          <h4 class="mb-0">Masz pytania ?</h4>
+        </div>
+        <div class="flex-grow-1">
+          <span class="d-flex align-items-center"
+            ><i class="bi bi-headset fs-3 me-2 text-secondary"></i>
+            <span class="text-secondary">12 345 67 89</span></span
+          >
+        </div>
+        <nav>
+          <ul class="list-unstyled d-flex mb-0">
+            <li class="me-3">
+              <a
+                class="footer__nav-list text-secondary link-secondary link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#"
+                >Regulamin</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer__nav-list text-secondary link-secondary link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#"
+                >Polityka prywatności</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p class="mt-3 text-secondary lh-sm">
+        Administratorem Twoich danych osobowych jest cyberzone sp. z o.o. z
+        siedzibą w Kielcach przy ul. lorem ipsum 25, 42-202 Kielce.
+        <a
+          class="text.primary"
+          data-bs-toggle="collapse"
+          href="#collapseExample"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+          >Więcej</a
+        >
+      </p>
+      <div class="collapse mb-4" id="collapseExample">
+        <div class="card card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+          consequuntur, eius ipsum quidem quisquam recusandae reprehenderit
+          saepe? Adipisci assumenda aut blanditiis expedita impedit ipsam ipsum,
+          ratione rerum, sint temporibus voluptates?
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

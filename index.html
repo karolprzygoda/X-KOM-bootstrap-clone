@@ -1,0 +1,3507 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script
+      defer
+      src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+    ></script>
+    <script defer src="src/newsletter-validation.js"></script>
+    <script defer src="src/scrollable-sections-scroll.js"></script>
+    <script defer src="src/toast-trigger.js"></script>
+    <script defer src="src/tooltip-trigger.js"></script>
+    <title>CYBERZONE</title>
+  </head>
+  <body class="bg-off-white">
+    <!-- Header  -->
+    <header class="border-bottom xl-no-bottom-border">
+      <!--  Navbar Mobile -->
+      <nav class="navbar bg-body-tertiary fixed-top box-shadow d-lg-none">
+        <div class="container-fluid">
+          <!--  Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <h1
+              class="d-inline-block align-text-top fs-6 text-uppercase fw-bold text-uppercase mb-0 brand-title"
+            >
+              cyberzone
+            </h1>
+          </a>
+          <!--  Icons  -->
+          <div
+            class="d-flex align-items-center justify-content-between d-lg-none"
+          >
+            <a class="me-4 me-md-5" href="./form.html"
+              ><i class="bi bi-person fs-3 text-black"></i
+            ></a>
+            <a class="me-4 me-md-5" href="#"
+              ><i class="bi bi-bag fs-5 text-black"></i
+            ></a>
+            <!--  offcanvas toggle button -->
+            <button
+              class="navbar-toggler border-0 m-0 p-0 outline-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <i class="bi bi-list fs-3 text-black"></i>
+            </button>
+          </div>
+          <!--  navigation offcanvas -->
+          <div
+            class="offcanvas offcanvas-end d-lg-none"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header border-bottom bg-off-white">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button
+                type="button"
+                class="btn-close offcanvas-btn-close-customization"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <h3
+                class="fs-7 text-dark-emphasis mb-3 fw-normal text-decoration-none"
+              >
+                Kategorie
+              </h3>
+              <form class="d-flex mt-3" role="search">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Wyszukaj"
+                    aria-label="Search"
+                    aria-describedby="button-addon2"
+                  />
+                  <button class="btn btn-secondary" type="button">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </div>
+              </form>
+              <ul
+                class="navbar-nav justify-content-end flex-grow-1 mt-3 pb-2 border-bottom"
+              >
+                <li class="mb-2">
+                  <a
+                    data-bs-toggle="offcanvas"
+                    role="button"
+                    aria-controls="components_offcanvas"
+                    class="nav-link active d-flex align-items-center"
+                    aria-current="page"
+                    href="#components_offcanvas"
+                  >
+                    <span class="d-flex align-items-center">
+                      <i class="bi bi-laptop me-3 fs-2"></i>Laptopy i komputery
+                    </span>
+                    <span class="ms-auto"
+                      ><i class="bi bi-chevron-right"></i
+                    ></span>
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a class="nav-link active d-flex align-items-center" href="#">
+                    <span class="d-flex align-items-center"
+                      ><i class="bi bi-phone me-3 fs-2"></i>Smartfony i
+                      smartwatche</span
+                    ><span class="ms-auto"
+                      ><i class="bi bi-chevron-right"></i></span
+                  ></a>
+                </li>
+                <li class="mb-2">
+                  <a class="nav-link active d-flex align-items-center" href="#"
+                    ><span class="d-flex align-items-center"
+                      ><i class="bi bi-controller me-3 fs-2"></i>Gaming i
+                      streaming</span
+                    ><span class="ms-auto"
+                      ><i class="bi bi-chevron-right"></i></span
+                  ></a>
+                </li>
+                <li class="mb-2">
+                  <a class="nav-link active d-flex align-items-center" href="#"
+                    ><span class="d-flex align-items-center"
+                      ><i class="bi bi-motherboard me-3 fs-2"></i>Podzespoły
+                      komputerowe</span
+                    ><span class="ms-auto"
+                      ><i class="bi bi-chevron-right"></i></span
+                  ></a>
+                </li>
+                <li class="mb-2">
+                  <a class="nav-link active d-flex align-items-center" href="#"
+                    ><span class="d-flex align-items-center"
+                      ><i class="bi bi-printer me-3 fs-2"></i>Urządzenia
+                      preferencyjne</span
+                    ><span class="ms-auto"
+                      ><i class="bi bi-chevron-right"></i></span
+                  ></a>
+                </li>
+                <li class="mb-2">
+                  <a class="nav-link active d-flex align-items-center" href="#"
+                    ><span class="d-flex align-items-center"
+                      ><i class="bi bi-tv me-3 fs-2"></i>TV i audio</span
+                    ><span class="ms-auto"
+                      ><i class="bi bi-chevron-right"></i></span
+                  ></a>
+                </li>
+                <li class="mb-2">
+                  <a class="nav-link active d-flex align-items-center" href="#"
+                    ><span class="d-flex align-items-center"
+                      ><i class="bi bi-house-gear me-3 fs-2"></i>Smarthome i
+                      lifestyle</span
+                    ><span class="ms-auto"
+                      ><i class="bi bi-chevron-right"></i></span
+                  ></a>
+                </li>
+                <li class="mb-2">
+                  <a class="nav-link active d-flex align-items-center" href="#"
+                    ><span class="d-flex align-items-center"
+                      ><i class="bi bi-usb-plug me-3 fs-2"></i>Akcesoria</span
+                    ><span class="ms-auto"
+                      ><i class="bi bi-chevron-right"></i></span
+                  ></a>
+                </li>
+                <li class="mb-2">
+                  <a class="nav-link active d-flex align-items-center" href="#"
+                    ><span class="d-flex align-items-center">
+                      <i
+                        class="bi bi-percent me-3 fs-2 text-color-promotion"
+                      ></i
+                      ><span class="text-color-promotion"
+                        >Promocje i nowości</span
+                      ></span
+                    ><span class="ms-auto"
+                      ><i class="bi bi-chevron-right"></i
+                    ></span>
+                  </a>
+                </li>
+              </ul>
+              <h3
+                class="fs-7 text-dark-emphasis mb-3 fw-normal text-decoration-none mt-3"
+              >
+                Masz pytania ?
+              </h3>
+              <ul class="navbar-nav justify-content-end">
+                <li class="mb-2">
+                  <a
+                    class="nav-link active d-flex align-items-center dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    ><span class="d-flex align-items-center">
+                      <i class="bi bi-telephone me-3 fs-5"></i>Pomoc i
+                      kontakt</span
+                    ><span class="ms-auto"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><p class="fs-6 d-flex align-items-center">
+                          <i class="bi bi-telephone-fill me-3 fs-2"></i> 12 345
+                          67 89
+                        </p></a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <p class="fs-6 d-flex align-items-center">
+                          <i class="bi bi-envelope-at-fill me-3 fs-2"></i>
+                          cyberzone@gmail.com
+                        </p></a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <p class="fs-6 d-flex align-items-center">
+                          <i class="bi bi-whatsapp me-3 fs-2"></i> WhatsApp
+                        </p></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--  Mobile nav cards    -->
+      <nav
+        class="container-lg mt-4 pt-5 bg-white pb-3 position-relative d-lg-none"
+      >
+        <div class="d-flex flex-nowrap overflow-auto scrollbar-none p-1">
+          <a class="text-decoration-none" href="#">
+            <div
+              class="me-3 d-flex flex-column justify-content-center text-center py-2 px-4 rounded-3 text-decoration-none text-body-secondary nav-card box-shadow"
+            >
+              <i class="bi bi-laptop header__nav-card-icon"></i>
+              <p>Laptopy i komputery</p>
+            </div>
+          </a>
+          <a class="text-decoration-none" href="#">
+            <div
+              class="box-shadow me-3 d-flex flex-column justify-content-center text-center py-2 px-4 rounded-3 text-decoration-none text-body-secondary nav-card"
+            >
+              <i class="bi bi-phone header__nav-card-icon"></i>
+              <p>Smartfony i smartwatche</p>
+            </div>
+          </a>
+          <a class="text-decoration-none" href="#">
+            <div
+              class="box-shadow me-3 d-flex flex-column justify-content-center text-center py-2 px-4 rounded-3 text-decoration-none text-body-secondary nav-card"
+            >
+              <i class="bi bi-controller header__nav-card-icon"></i>
+              <p>Gaming i streaming</p>
+            </div>
+          </a>
+          <a class="text-decoration-none" href="#">
+            <div
+              class="box-shadow me-3 d-flex flex-column justify-content-center text-center py-2 px-4 rounded-3 text-decoration-none text-body-secondary nav-card"
+            >
+              <i class="bi bi-motherboard header__nav-card-icon"></i>
+              <p>Podzespoły komputerowe</p>
+            </div>
+          </a>
+          <a class="text-decoration-none" href="#">
+            <div
+              class="box-shadow me-3 d-flex flex-column justify-content-center text-center py-2 px-4 rounded-3 text-decoration-none text-body-secondary nav-card"
+            >
+              <i class="bi bi-printer header__nav-card-icon"></i>
+              <p>Urządzenia preferencyjne</p>
+            </div>
+          </a>
+          <a class="text-decoration-none" href="#">
+            <div
+              class="box-shadow me-3 d-flex flex-column justify-content-center text-center py-2 px-4 rounded-3 text-decoration-none text-body-secondary nav-card"
+            >
+              <i class="bi bi-tv header__nav-card-icon"></i>
+              <p>TV i audio</p>
+            </div>
+          </a>
+          <a class="text-decoration-none" href="#">
+            <div
+              class="box-shadow me-3 d-flex flex-column justify-content-center text-center py-2 px-4 rounded-3 text-decoration-none text-body-secondary nav-card"
+            >
+              <i class="bi bi-house-gear header__nav-card-icon"></i>
+              <p>Smarthome i lifestyle</p>
+            </div>
+          </a>
+          <a class="text-decoration-none" href="#">
+            <div
+              class="box-shadow me-3 d-flex flex-column justify-content-center text-center py-2 px-5 rounded-3 text-decoration-none text-body-secondary nav-card"
+            >
+              <i class="bi bi-usb-plug header__nav-card-icon"></i>
+              <p>Akcesoria i Gadżety</p>
+            </div>
+          </a>
+          <a class="text-decoration-none" href="#">
+            <div
+              class="box-shadow d-flex flex-column justify-content-center text-center py-2 px-5 rounded-3 text-decoration-none text-body-secondary nav-card"
+            >
+              <div class="text-color-promotion">
+                <i class="bi bi-percent header__nav-card-icon"></i>
+                <p>Promocje i nowości</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </nav>
+      <!-- Navbar desktop  -->
+      <nav class="d-none d-lg-flex navbar pb-0 pt-3 mb-3 box-shadow">
+        <!--  Top-->
+        <div
+          class="container d-flex justify-content-center align-items-center mb-3 px-2"
+        >
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <h1
+              class="d-inline-block align-text-top fs-2 text-uppercase fw-bold ps-1 mb-0 brand-title"
+            >
+              cyberzone
+            </h1>
+          </a>
+          <form class="d-flex flex-grow-1 ms-3" role="search">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control box-shadow"
+                placeholder="Wyszukaj"
+                aria-label="Search"
+                aria-describedby="search-button-desktop"
+              />
+              <button
+                class="btn btn-secondary box-shadow"
+                type="button"
+                id="search-button-desktop"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+          <div class="d-flex flex-row flex-grow-2 ms-4">
+            <a
+              class="nav-link active d-flex align-items-center px-3"
+              href="#"
+              role="button"
+              aria-expanded="false"
+              data-bs-toggle="modal"
+              data-bs-target="#contatModal"
+              ><span
+                class="d-flex flex-column align-items-center border-end pe-4"
+              >
+                <i class="bi bi-headset fs-3"></i
+                ><span class="ms-auto">Pomoc i kontakt</span></span
+              >
+            </a>
+            <a
+              class="d-flex flex-column align-items-center nav-link pe-3"
+              href="./form.html"
+              ><i class="bi bi-person fs-3"></i><span>Twoje konto</span></a
+            >
+            <a
+              class="d-flex flex-column align-items-center nav-link ps-3"
+              href="#"
+              ><i class="bi bi-bag fs-3"></i><span>Koszyk</span></a
+            >
+          </div>
+        </div>
+        <!-- Bottom -->
+        <div class="container-fluid bg-body-tertiary p-0">
+          <div class="container">
+            <ul
+              class="navbar-nav flex-row justify-content-between align-items-center"
+            >
+              <li class="m-0">
+                <a
+                  data-bs-toggle="offcanvas"
+                  role="button"
+                  aria-controls="components_offcanvas"
+                  class="nav-link active d-flex align-items-center"
+                  aria-current="page"
+                  href="#components_offcanvas"
+                >
+                  <span class="d-flex align-items-center">
+                    <i class="d-none d-xl-inline bi bi-laptop fs-4 me-2"></i
+                    ><span class="header__desktop-nav-links-text fs-7"
+                      >Laptopy<br />i komputery</span
+                    >
+                  </span>
+                </a>
+              </li>
+              <li class="m-0">
+                <a class="nav-link active d-flex align-items-center" href="#">
+                  <span class="d-flex align-items-center"
+                    ><i class="d-none d-xl-inline bi bi-phone fs-4 me-2"></i
+                    ><span class="header__desktop-nav-links-text fs-7"
+                      >Smartfony<br />i smartwatche</span
+                    ></span
+                  >
+                </a>
+              </li>
+              <li class="m-0">
+                <a class="nav-link active d-flex align-items-center" href="#"
+                  ><span class="d-flex align-items-center"
+                    ><i
+                      class="d-none d-xl-inline bi bi-controller fs-4 me-2"
+                    ></i
+                    ><span class="header__desktop-nav-links-text fs-7"
+                      >Gaming<br />i streaming</span
+                    ></span
+                  ></a
+                >
+              </li>
+              <li class="m-0">
+                <a class="nav-link active d-flex align-items-center" href="#"
+                  ><span class="d-flex align-items-center"
+                    ><i
+                      class="d-none d-xl-inline bi bi-motherboard fs-4 me-2"
+                    ></i
+                    ><span class="header__desktop-nav-links-text fs-7"
+                      >Podzespoły<br />komputerowe</span
+                    ></span
+                  ></a
+                >
+              </li>
+              <li class="m-0">
+                <a class="nav-link active d-flex align-items-center" href="#"
+                  ><span class="d-flex align-items-center"
+                    ><i class="d-none d-xl-inline bi bi-printer fs-4 me-2"></i
+                    ><span class="header__desktop-nav-links-text fs-7"
+                      >Urządzenia<br />preferencyjne</span
+                    ></span
+                  ></a
+                >
+              </li>
+              <li class="m-0">
+                <a class="nav-link active d-flex align-items-center" href="#"
+                  ><span class="d-flex align-items-center"
+                    ><i class="d-none d-xl-inline bi bi-tv fs-4 me-2"></i
+                    ><span class="header__desktop-nav-links-text fs-7"
+                      >TV<br />i audio</span
+                    ></span
+                  ></a
+                >
+              </li>
+              <li class="m-0">
+                <a class="nav-link active d-flex align-items-center" href="#"
+                  ><span class="d-flex align-items-center"
+                    ><i
+                      class="d-none d-xl-inline bi bi-house-gear fs-4 me-2"
+                    ></i
+                    ><span class="header__desktop-nav-links-text fs-7"
+                      >Smarthome<br />i lifestyle</span
+                    ></span
+                  ></a
+                >
+              </li>
+              <li class="m-0">
+                <a class="nav-link active d-flex align-items-center" href="#"
+                  ><span class="d-flex align-items-center"
+                    ><i class="d-none d-xl-inline bi bi-usb-plug fs-4 me-2"></i
+                    ><span class="header__desktop-nav-links-text fs-7"
+                      >Akcesoria</span
+                    ></span
+                  ></a
+                >
+              </li>
+              <li class="m-0">
+                <a class="nav-link active d-flex align-items-center" href="#"
+                  ><span class="d-flex align-items-center">
+                    <i
+                      class="d-none d-xl-inline bi bi-percent fs-4 me-2 text-color-promotion"
+                    ></i
+                    ><span
+                      class="text-color-promotion header__desktop-nav-links-text fs-7"
+                      >Promocje<br />i nowości</span
+                    ></span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main  -->
+    <main>
+      <!-- Promo Section   -->
+      <section
+        class="container-lg mt-4 pt-3 border-bottom border-top bg-white pb-3 position-relative xl-no-top-border px-1 mt-lg-0 pt-lg-1 px-lg-0 xl-no-bottom-border"
+      >
+        <!--  Mobile layout  -->
+        <div class="d-lg-none">
+          <!--   Promos slider  -->
+          <div class="d-flex flex-nowrap overflow-auto scrollbar-none p-1">
+            <a class="pb-2 pt-1" href="#"
+              ><img
+                loading="lazy"
+                src="assets/promo-imgs/promo-section__1.webp"
+                alt="win-11 laptop reklama"
+                class="img-fluid rounded-3 box-shadow max-width-300 me-3"
+            /></a>
+            <a class="pb-2 pt-1" href="#"
+              ><img
+                loading="lazy"
+                src="assets/promo-imgs/promo-section__2.webp"
+                alt="rtv reklama"
+                class="img-fluid rounded-3 box-shadow max-width-300 me-3"
+            /></a>
+            <a class="pb-2 pt-1" href="#"
+              ><img
+                loading="lazy"
+                src="assets/promo-imgs/promo-section__3.webp"
+                alt="HP Victus15 reklama"
+                class="img-fluid rounded-3 box-shadow max-width-300 me-3"
+            /></a>
+            <a class="pb-2 pt-1" href="#"
+              ><img
+                loading="lazy"
+                src="assets/promo-imgs/promo-section__4.webp"
+                alt=""
+                class="img-fluid rounded-3 box-shadow max-width-300 me-3"
+            /></a>
+            <a class="pb-2 pt-1" href="#"
+              ><img
+                loading="lazy"
+                src="assets/promo-imgs/promo-section__5.webp"
+                alt="Nothing Phone reklama"
+                class="img-fluid rounded-3 box-shadow max-width-300 me-3"
+            /></a>
+            <a class="pb-2 pt-1" href="#"
+              ><img
+                loading="lazy"
+                src="assets/promo-imgs/promo-section__6.webp"
+                alt="Dzień kobiet reklama"
+                class="img-fluid rounded-3 box-shadow max-width-300 me-3"
+            /></a>
+            <a class="pb-2 pt-1" href="#"
+              ><img
+                loading="lazy"
+                src="assets/promo-imgs/promo-section__7.webp"
+                alt="Laptopy dla nauczycieli reklama "
+                class="img-fluid rounded-3 box-shadow max-width-300"
+            /></a>
+          </div>
+          <!--   Lottery box    -->
+          <div class="border-purple w-auto rounded-4 m-1">
+            <div
+              class="bg-purple-gradient p-4 rounded-4 w-100 d-flex flex-column align-items-center justify-content-between"
+            >
+              <div
+                class="text-secondary d-flex align-items-center justify-content-center w-100"
+              >
+                <i class="bi bi-dropbox me-2 fs-3"></i
+                ><span class="fs-3">un.Box</span>
+              </div>
+              <div class="mt-5">
+                <img
+                  loading="lazy"
+                  src="assets/promo-imgs/promo-section__lotery.png"
+                  alt="Lego reklama"
+                  class="img-fluid"
+                />
+              </div>
+              <div
+                class="text-secondary mb-4 d-flex flex-column text-center gap-4 pt-3"
+              >
+                <span class="text-dark fw-bold text-center fs-3"
+                  >Codziennie losuj 3 zniżki</span
+                >
+                <span class="fs-6"
+                  >W boxach znajdziesz produkty nawet za 1 zł</span
+                >
+              </div>
+              <a
+                type="button"
+                class="btn btn-primary btn-lg fluid w-100 mb-2"
+                href="#"
+                ><span
+                  class="d-flex align-items-center justify-content-center fs-6"
+                  >Losuj zniżki
+                  <span><i class="bi bi-chevron-right ms-2"></i></span></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!--  Desktop layout  -->
+        <div class="d-none d-lg-block">
+          <div
+            id="promoCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner rounded-4 box-shadow">
+              <div class="carousel-item active">
+                <img
+                  src="assets/promo-imgs/promo-img-desktop/promo-desktop-1.jpg"
+                  class="img-fluid"
+                  alt="Wymień swojego iPhone i zyskaj nawet 550 zł"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/promo-imgs/promo-img-desktop/promo-desktop-2.webp"
+                  class="img-fluid"
+                  alt="Złap akcesoria taniej nawet do 62%"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/promo-imgs/promo-img-desktop/promo-desktop-3.webp"
+                  class="img-fluid"
+                  alt="Odbierz zwrot do 2500 zł za zakup TV"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/promo-imgs/promo-img-desktop/promo-desktop-4.webp"
+                  class="img-fluid"
+                  alt="Laptopy dla nauczycieli"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/promo-imgs/promo-img-desktop/promo-desktop-5.webp"
+                  class="img-fluid"
+                  alt="realme 12 Pro Series 5G"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/promo-imgs/promo-img-desktop/promo-desktop-6.webp"
+                  class="img-fluid"
+                  alt="Wynajmij sprzęt"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/promo-imgs/promo-img-desktop/promo-desktop-7.webp"
+                  class="img-fluid"
+                  alt="Zamów lego i odbierz zestaw gratis"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev box-shadow bg-white rounded-3 text-black"
+              type="button"
+              data-bs-target="#promoCarousel"
+              data-bs-slide="prev"
+            >
+              <i class="bi bi-chevron-left"></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next bg-white box-shadow rounded-3 text-black"
+              type="button"
+              data-bs-target="#promoCarousel"
+              data-bs-slide="next"
+            >
+              <i class="bi bi-chevron-right"></i>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Recommended Section   -->
+      <section
+        class="container-lg border-bottom border-top mt-4 pt-3 bg-white pb-3 position-relative xl-no-top-border mt-xl-2 px-lg-0 pb-lg-5"
+      >
+        <!--  Mobile layout  -->
+        <div class="d-lg-none">
+          <h2 class="mb-5 fs-1">Polecamy</h2>
+          <div class="d-flex flex-nowrap overflow-auto scrollbar-none p-1">
+            <a class="me-3 text-decoration-none" href="#">
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/recommended-imgs/recommended-1.webp"
+                  class="card-img-top"
+                  alt="Rode NT1 5th Gen Black"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6">Rode NT1 5th Gen Black</h5>
+                  <p class="card-text mt-3">1 249,00 zł</p>
+                </div>
+              </div>
+            </a>
+            <a class="me-3 text-decoration-none" href="#">
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/recommended-imgs/recommended-2.webp"
+                  class="card-img-top"
+                  alt="Phanteks NV‑Serie NV5 White"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Phanteks NV‑Serie NV5 White
+                  </h5>
+                  <p class="card-text mt-3">489,00 zł</p>
+                </div>
+              </div>
+            </a>
+            <a class="me-3 text-decoration-none" href="#">
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/recommended-imgs/recommended-3.webp"
+                  class="card-img-top"
+                  alt="Kingston FURY 32GB (2x16GB) 6800MHz CL36 Renegade RGB White XMP"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Kingston FURY 32GB (2x16GB) 6800MHz CL36 Renegade RGB White
+                    XMP
+                  </h5>
+                  <p class="card-text mt-3">889,00 zł</p>
+                </div>
+              </div>
+            </a>
+            <a class="me-3 text-decoration-none" href="#">
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/recommended-imgs/recommended-4.webp"
+                  class="card-img-top"
+                  alt="Sony KD‑55X85L 55 LED 4K 120Hz GoogleTV Dolby Vision Dolby
+              Atmos"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Sony KD‑55X85L 55" LED 4K 120Hz GoogleTV Dolby Vision Dolby
+                    Atmos
+                  </h5>
+                  <p class="card-text mt-3">3 999,00 zł</p>
+                </div>
+              </div>
+            </a>
+            <a class="me-3 text-decoration-none" href="#">
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/recommended-imgs/recommended-8.webp"
+                  class="card-img-top"
+                  alt="Sony PlayStation 5 D Chassis"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Sony PlayStation 5 D Chassis
+                  </h5>
+                  <p class="card-text mt-3">2 699,00 zł</p>
+                </div>
+              </div>
+            </a>
+            <a class="me-3 text-decoration-none" href="#">
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/recommended-imgs/recommended-5.webp"
+                  class="card-img-top"
+                  alt="Apple MacBook Air M3/8GB/256/Mac OS Północ 8R GPU"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Apple MacBook Air M3/8GB/256/Mac OS Północ 8R GPU
+                  </h5>
+                  <p class="card-text mt-3">5 999,00 zł</p>
+                </div>
+              </div>
+            </a>
+            <a class="me-3 text-decoration-none" href="#">
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/recommended-imgs/recommended-6.webp"
+                  class="card-img-top"
+                  alt="Nothing Phone (2a) 5G 12/256GB Black 120Hz"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Nothing Phone (2a) 5G 12/256GB Black 120Hz
+                  </h5>
+                  <p class="card-text mt-3">1 679,00 zł</p>
+                </div>
+              </div>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/recommended-imgs/recommended-7.webp"
+                  class="card-img-top"
+                  alt="Xiaomi 14 Ultra 16/512GB Black"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Xiaomi 14 Ultra 16/512GB Black
+                  </h5>
+                  <p class="card-text mt-3">6 799,00 zł</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!--  Desktop layout  -->
+        <div class="d-none d-lg-block">
+          <div class="d-flex justify-content-between">
+            <div class="border-purple w-auto rounded-4 px-0 my-0 me-3">
+              <div
+                class="bg-purple-gradient p-4 rounded-4 w-100 d-flex flex-column align-items-center justify-content-between h-100"
+              >
+                <div
+                  class="text-secondary d-flex align-items-center justify-content-center w-100"
+                >
+                  <i class="bi bi-dropbox me-2 fs-3"></i
+                  ><span class="fs-3">un.Box</span>
+                </div>
+                <div class="mt-5">
+                  <img
+                    loading="lazy"
+                    src="assets/promo-imgs/promo-section__lotery.png"
+                    alt="Lego reklama"
+                    class="img-fluid"
+                  />
+                </div>
+                <div
+                  class="text-secondary d-flex flex-column text-center gap-4 pt-3"
+                >
+                  <span class="text-dark fw-bold text-center fs-3"
+                    >Codziennie losuj 3 zniżki</span
+                  >
+                  <span class="fs-6"
+                    >W boxach znajdziesz produkty nawet za 1 zł</span
+                  >
+                </div>
+                <a
+                  type="button"
+                  class="btn btn-primary btn-lg fluid w-100 mb-2"
+                  href="#"
+                  ><span
+                    class="d-flex align-items-center justify-content-center fs-6"
+                    >Losuj zniżki
+                    <span><i class="bi bi-chevron-right ms-2"></i></span></span
+                ></a>
+              </div>
+            </div>
+            <div class="container pt-4 border-top ms-lg-2 ms-xl-4 pe-0">
+              <div class="row">
+                <h2 class="mb-5 fs-3 col-12">Polecamy</h2>
+              </div>
+              <div class="row mb-5">
+                <a class="col-3 p-3 text-decoration-none" href="#">
+                  <div class="card border-0 border-0 custom-card">
+                    <img
+                      loading="lazy"
+                      src="assets/recommended-imgs/recommended-1.webp"
+                      class="card-img-top"
+                      alt="Rode NT1 5th Gen Black"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fs-6 truncate">
+                        Rode NT1 5th Gen Black
+                      </h5>
+                      <div
+                        class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                      >
+                        <p class="mb-0">1 249,00 zł</p>
+                        <i
+                          class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-3 p-3 text-decoration-none" href="#">
+                  <div class="card border-0 border-0 custom-card">
+                    <img
+                      loading="lazy"
+                      src="assets/recommended-imgs/recommended-2.webp"
+                      class="card-img-top"
+                      alt="Phanteks NV‑Serie NV5 White"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fs-6 truncate">
+                        Phanteks NV‑Serie NV5 White
+                      </h5>
+                      <div
+                        class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                      >
+                        <p class="mb-0">489,00 zł</p>
+                        <i
+                          class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-3 p-3 text-decoration-none" href="#">
+                  <div class="card border-0 border-0 custom-card">
+                    <img
+                      loading="lazy"
+                      src="assets/recommended-imgs/recommended-3.webp"
+                      class="card-img-top"
+                      alt="Kingston FURY 32GB (2x16GB) 6800MHz CL36 Renegade RGB White XMP"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fs-6 truncate">
+                        Kingston FURY 32GB (2x16GB) 6800MHz CL36 Renegade RGB
+                        White XMP
+                      </h5>
+                      <div
+                        class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                      >
+                        <p class="mb-0">889,00 zł</p>
+                        <i
+                          class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-3 p-3 text-decoration-none" href="#">
+                  <div class="card border-0 border-0 custom-card">
+                    <img
+                      loading="lazy"
+                      src="assets/recommended-imgs/recommended-4.webp"
+                      class="card-img-top"
+                      alt="Sony KD‑55X85L 55 LED 4K 120Hz GoogleTV Dolby Vision Dolby
+              Atmos"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fs-6 truncate">
+                        Sony KD‑55X85L 55" LED 4K 120Hz GoogleTV Dolby Vision
+                        Dolby Atmos
+                      </h5>
+                      <div
+                        class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                      >
+                        <p class="mb-0">3 999,00 zł</p>
+                        <i
+                          class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="row">
+                <a class="col-3 p-3 text-decoration-none" href="#">
+                  <div class="card border-0 border-0 custom-card">
+                    <img
+                      loading="lazy"
+                      src="assets/recommended-imgs/recommended-8.webp"
+                      class="card-img-top"
+                      alt="Sony PlayStation 5 D Chassis"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fs-6 truncate">
+                        Sony PlayStation 5 D Chassis
+                      </h5>
+                      <div
+                        class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                      >
+                        <p class="mb-0">2 699,00 zł</p>
+                        <i
+                          class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-3 p-3 text-decoration-none" href="#">
+                  <div class="card border-0 border-0 custom-card">
+                    <img
+                      loading="lazy"
+                      src="assets/recommended-imgs/recommended-5.webp"
+                      class="card-img-top"
+                      alt="Apple MacBook Air M3/8GB/256/Mac OS Północ 8R GPU"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fs-6 truncate">
+                        Apple MacBook Air M3/8GB/256/Mac OS Północ 8R GPU
+                      </h5>
+                      <div
+                        class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                      >
+                        <p class="mb-0">5 999,00 zł</p>
+                        <i
+                          class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-3 p-3 text-decoration-none" href="#">
+                  <div class="card border-0 border-0 custom-card">
+                    <img
+                      loading="lazy"
+                      src="assets/recommended-imgs/recommended-6.webp"
+                      class="card-img-top"
+                      alt="Nothing Phone (2a) 5G 12/256GB Black 120Hz"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fs-6 truncate">
+                        Nothing Phone (2a) 5G 12/256GB Black 120Hz
+                      </h5>
+                      <div
+                        class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                      >
+                        <p class="mb-0">1 679,00 zł</p>
+                        <i
+                          class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-3 p-3 text-decoration-none" href="#">
+                  <div class="card border-0 border-0 custom-card">
+                    <img
+                      loading="lazy"
+                      src="assets/recommended-imgs/recommended-7.webp"
+                      class="card-img-top"
+                      alt="Xiaomi 14 Ultra 16/512GB Black"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fs-6 truncate">
+                        Xiaomi 14 Ultra 16/512GB Black
+                      </h5>
+                      <div
+                        class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                      >
+                        <p class="mb-0">6 799,00 zł</p>
+                        <i
+                          class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- New items Section   -->
+      <section
+        class="container-lg mt-4 pt-3 border-bottom border-top bg-white pb-3 position-relative xl-no-top-border pb-lg-3"
+      >
+        <h2 class="fs-1 mb-2 d-flex justify-content-between align-items-center">
+          Nowości
+          <a
+            class="d-none d-lg-inline fs-6 text-decoration-none rounded-3 text-secondary show-all-btn p-2"
+            href="#"
+            >Pokaż wszystkie <i class="bi bi-chevron-right"></i
+          ></a>
+        </h2>
+        <p class="mb-5 text-body-secondary">
+          Zobacz, co pojawiło się w naszym sklepie
+        </p>
+        <div
+          class="d-flex flex-nowrap overflow-auto scrollbar-none p-1"
+          id="recommended-section__scrollable-container"
+        >
+          <div
+            class="d-flex align-items-center justify-content-between"
+            id="recommended-section-items"
+            style="min-width: 2100px"
+          >
+            <a
+              class="me-3 mx-lg-auto p-lg-3 text-decoration-none"
+              style="width: 8.3333%"
+              href="#"
+            >
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/new_items-imgs/new-item-1.webp"
+                  class="card-img-top"
+                  alt="Samsung Galaxy Fit3 Srebrny"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6">Samsung Galaxy Fit3 Srebrny</h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">279,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="me-3 mx-lg-auto p-lg-3 text-decoration-none"
+              style="width: 8.3333%"
+              href="#"
+            >
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/new_items-imgs/new-item-2.webp"
+                  class="card-img-top"
+                  alt="HP 255 G9 Ryzen 5‑5625U/16GB/512/Win11"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    HP 255 G9 Ryzen 5‑5625U/16GB/512/Win11
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">2199,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="me-3 mx-lg-auto p-lg-3 text-decoration-none"
+              style="width: 8.3333%"
+              href="#"
+            >
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/new_items-imgs/new-item-3.webp"
+                  class="card-img-top"
+                  alt="Xiaomi Redmi A3 3/64GB Green"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Xiaomi Redmi A3 3/64GB Green
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">449,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="me-3 mx-lg-auto p-lg-3 text-decoration-none"
+              style="width: 8.3333%"
+              href="#"
+            >
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/new_items-imgs/new-item-4.webp"
+                  class="card-img-top"
+                  alt="realme 12 Pro+ 5G 12/512GB Submarine Blue"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    realme 12 Pro+ 5G 12/512GB Submarine Blue
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">2 499,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="me-3 mx-lg-auto p-lg-3 text-decoration-none"
+              style="width: 8.3333%"
+              href="#"
+            >
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/new_items-imgs/new-item-5.webp"
+                  class="card-img-top"
+                  alt="Sony KD‑55X85L 55 LED 4K 120Hz + LCD Ultra Clean Set 100ml"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Sony KD‑55X85L 55" LED 4K 120Hz + LCD Ultra Clean Set 100ml
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">3 999,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="me-3 mx-lg-auto p-lg-3 text-decoration-none"
+              style="width: 8.3333%"
+              href="#"
+            >
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/new_items-imgs/new-item-6.webp"
+                  class="card-img-top"
+                  alt="MSI Claw A1M Intel Core Ultra 7 / 7” FHD IPS / Windows 11U"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    MSI Claw A1M Intel Core Ultra 7 / 7” FHD IPS / Windows 11U
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">3 899,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="me-3 mx-lg-auto p-lg-3 text-decoration-none"
+              style="width: 8.3333%"
+              href="#"
+            >
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/new_items-imgs/new-item-7.webp"
+                  class="card-img-top"
+                  alt="SteelSeries Kit Pro Wireless #1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    SteelSeries Kit Pro Wireless #1
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">3 140,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="me-3 mx-lg-auto p-lg-3 text-decoration-none"
+              style="width: 8.3333%"
+              href="#"
+            >
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/new_items-imgs/new-item-8.webp"
+                  class="card-img-top"
+                  alt="Arctic Liquid Freezer III 240 2x120mm"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Arctic Liquid Freezer III 240 2x120mm
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">379,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="me-3 mx-lg-auto p-lg-3 text-decoration-none"
+              style="width: 8.3333%"
+              href="#"
+            >
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/new_items-imgs/new-item-9.webp"
+                  class="card-img-top"
+                  alt="G4M3R HERO i7‑14700F/32GB/1TB/RTX4070S/W11x"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    G4M3R HERO i7‑14700F/32GB/1TB/RTX4070S/W11x
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">8 750,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="me-3 mx-lg-auto p-lg-3 text-decoration-none"
+              style="width: 8.3333%"
+              href="#"
+            >
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/new_items-imgs/new-item-10.webp"
+                  class="card-img-top"
+                  alt="Samsung Galaxy Fit3 Różowe złoto"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Samsung Galaxy Fit3 Różowe złoto
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">279,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="p-lg-3 text-decoration-none"
+              style="width: 8.3333%"
+              href="#"
+            >
+              <div class="card border-0 border-0 custom-card">
+                <img
+                  loading="lazy"
+                  src="assets/new_items-imgs/new-item-11.webp"
+                  class="card-img-top"
+                  alt="Samsung QE55Q77C + kabel hdmi"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Samsung QE55Q77C + kabel hdmi
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">3 399,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <button
+          class="d-none d-lg-block bg-white rounded-3 text-black border-0 box-shadow position-absolute scroll-left"
+          id="new-items-prev"
+        >
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <button
+          class="d-none d-lg-block bg-white rounded-3 text-black border-0 box-shadow position-absolute scroll-right"
+          id="new-items-next"
+        >
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </section>
+      <!-- Discount Section   -->
+      <section
+        class="container-lg mt-4 pt-3 border-bottom border-top bg-white pb-3 position-relative xl-no-top-border pb-lg-3"
+      >
+        <h2 class="fs-1 mb-4 d-flex justify-content-between align-items-center">
+          Promocje
+          <a
+            class="d-none d-lg-inline fs-6 text-decoration-none rounded-3 text-secondary show-all-btn p-2"
+            href="#"
+            >Pokaż wszystkie <i class="bi bi-chevron-right"></i
+          ></a>
+        </h2>
+        <div
+          class="d-flex flex-nowrap overflow-auto scrollbar-none"
+          id="discount-section__scrollable-container"
+        >
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-1.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="AMD rozszerza gamę produktów AMD Radeon™ RX serii 7000"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  AMD rozszerza gamę produktów AMD Radeon™ RX serii 7000
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Odkryj nowy model kart graficznych AMD Radeon™ RX 7900 GRE
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-2.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="MacBook Air"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  MacBook Air
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Smukły sprinter. Z grubą mocą M3.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-3.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Odkryj klawiaturę THOR 230TKL"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Zaprojektowana z myślą o Tobie
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Odkryj klawiaturę THOR 230TKL
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-4.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Kup tablet graficzny Huion w super cenie"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Kup tablet graficzny Huion w super cenie
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Taniej nawet o 500 zł.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-5.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Sprawdź smartfony z serii Galaxy S"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Najlepsze z najlepszych
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Sprawdź smartfony z serii Galaxy S
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-6.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Sprawdź wyjątkowe oferty"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Skomponuj swój idealny zestaw
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Sprawdź wyjątkowe oferty
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-7.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Złap zestawy SteelSeries do 30% taniej"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Złap zestawy SteelSeries do 30% taniej
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  przy zakupie laptopa lub desktopa
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-8.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Sprawdź urządzenia Apple"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Sprawdź urządzenia Apple
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  przy zakupie laptopa lub desktopa
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-9.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Moto promocje przez cały miesiąc"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Moto promocje przez cały miesiąc
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Sprawdź wyjątkowe oferty
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-10.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Podaruj LEGO® na Dzień Kobiet. Teraz wszystkie zestawy z
+                darmową dostawą"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Najpierw złóż życzenia, a potem… kwiaty
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Podaruj LEGO® na Dzień Kobiet. Teraz wszystkie zestawy z
+                  darmową dostawą
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-11.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Zgarnij do 2500 zł zwrotu na konto"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Zgarnij do 2500 zł zwrotu na konto
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Przy zakupie wybranych produktów SONY
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-12.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Zgarnij 500 zł zwrotu blikiem Przy zakupie Acer Chromebook Plus"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Zgarnij 500 zł zwrotu blikiem
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Przy zakupie Acer Chromebook Plus
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-13.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="NVIDIA GeForce RTX z serii 40 SUPER"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  SUPERszybkie, SUPERmocne. Poznaj nowe karty graficzne
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  NVIDIA GeForce RTX z serii 40 SUPER
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-14.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Produkty EVER taniej do 47%"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Złap je w aplikacji
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Produkty EVER taniej do 47%
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-15.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Złap smartfon Motorola za 1 zł"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Złap smartfon Motorola za 1 zł
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Przy zakupie wybranego laptopa Lenovo dla nauczyciela
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-16.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Złap Microsoft 365 Personal za 1 zł"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Złap Microsoft 365 Personal za 1 zł
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Przy zakupie laptopa dla nauczyciela
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-17.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Sprawdź ofertę specjalną od Xiaomi"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Goździk to za mało?
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Sprawdź ofertę specjalną od Xiaomi
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-18.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Premiera Xiaomi 14 Ultra"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Premiera Xiaomi 14 Ultra
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  zamów i zyskaj zestaw fotograficzny oraz ładowarkę w prezencie
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-19.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Premiera Nothing Phone (2a)"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Premiera Nothing Phone (2a)
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Kolor czarny - tylko w cyberzone
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/discount-imgs/discount-img-20.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Premiera Nothing Phone (2a)"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Premiera Nothing Phone (2a)
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Oszczędzasz aż do 1050 zł
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <hr class="d-lg-none" />
+        <div class="w-100 d-flex justify-content-center d-lg-none">
+          <div>
+            <a
+              class="text-decoration-none rounded-3 text-secondary show-all-btn p-2"
+              href="#"
+              >Pokaż wszystkie <i class="bi bi-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+        <button
+          class="d-none d-lg-block d-none d-lg-block bg-white rounded-3 text-black border-0 box-shadow position-absolute scroll-left"
+          style="top: 40% !important"
+          id="discount-section__scrollable-items-prev"
+        >
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <button
+          class="d-none d-lg-block bg-white rounded-3 text-black border-0 box-shadow position-absolute scroll-right"
+          style="top: 40% !important"
+          id="discount-section__scrollable-items-next"
+        >
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </section>
+      <!-- News Section   -->
+      <section
+        class="container-lg mt-4 pt-3 border-bottom border-top bg-white pb-3 position-relative xl-no-top-border pb-lg-3"
+      >
+        <h2 class="fs-1 mb-4 d-flex justify-content-between align-items-center">
+          Aktualności
+          <a
+            class="d-none d-lg-inline fs-6 text-decoration-none rounded-3 text-secondary show-all-btn p-2"
+            href="#"
+            >Pokaż wszystkie <i class="bi bi-chevron-right"></i
+          ></a>
+        </h2>
+        <div
+          class="d-flex flex-nowrap overflow-auto scrollbar-none p-1"
+          id="news-section__scrollable-container"
+        >
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/news-imgs/news-img-1.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Postaw na styl i wydajność. Sprawdź smartfony Honor dostępne w
+                ofercie x‑komu"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate">
+                  Postaw na styl i wydajność. Sprawdź smartfony Honor dostępne w
+                  ofercie x‑komu
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Smartfony od marki Honor to doskonały wybór dla osób
+                  szukających urządzeń łączących nowoczesne technologie, wysoką
+                  jakość wykonania i przystępną cenę. Dzięki bogatej bazie
+                  oferowanych funkcjonalności, inteligentnym systemom
+                  zarządzania oraz intuicyjnemu oprogramowaniu, można mieć
+                  pewność, że zaspokoją potrzeby zarówno codziennych
+                  użytkowników, jak i bardziej wymagających fanów
+                  technologicznych nowinek. Poznaj je bliżej i wybierz wariant
+                  dla siebie.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/news-imgs/news-img-2.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Premiera serii OnePlus 12. Zamów OnePlus 12 lub 12R już dziś i
+                odbierz prezent"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Premiera serii OnePlus 12. Zamów OnePlus 12 lub 12R już dziś i
+                  odbierz prezenty
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Atrakcyjny design, pełna gotowość do wielozadaniowej pracy,
+                  wybitne ekrany i aparaty, które utrwalają wspomnienia w
+                  idealnie wyrazistej formie. Oto najwyższej klasy OnePlus 12 i
+                  dorównujący flagowcom OnePlus 12R. Poznaj premierowe smartfony
+                  OnePlus 12 Series, wybierz swój model i skorzystaj z promocji
+                  na start sprzedaży.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/news-imgs/news-img-3.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Premierę nowych modeli Xiaomi Redmi Note 13 czas zacząć!"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate">
+                  Premierę nowych modeli Xiaomi Redmi Note 13 czas zacząć!
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Jest 25 stycznia, a to oznacza jedno – swoją premierę mają
+                  smartfony serii Xiaomi Redmi Note 13. Do sprzedaży trafia aż
+                  pięć modeli w różnych wariantach kolorystycznych. Nowe modele
+                  to: Redmi Note 13 i Redmi Note 13 5G, Redmi Note 13 Pro i
+                  Redmi Note 13 Pro 5G oraz Redmi Note 13 Pro+ 5g. Sprawdź
+                  szczegóły.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/news-imgs/news-img-4.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Szybkie i pojemne. Odkryj dyski SSD Crucial P3 i P3 Plus"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate">
+                  Szybkie i pojemne. Odkryj dyski SSD Crucial P3 i P3 Plus
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Rozglądasz się za nowym, pojemniejszym dyskiem, który
+                  zawstydzi wydajnością poprzedni? Sprawdź ofertę marki Crucial
+                  na dyski Crucial P3 i Crucial P3 Plus, które łączą szybkość z
+                  energooszczędnością, a jednocześnie oferują dużą przestrzeń na
+                  wszystkie niezbędne dane. Poznaj szczegóły.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/news-imgs/news-img-5.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Premiera Suicide Squad: Kill the Justice League. Dołącz do
+                Legionu samobójców i staw czoło Lidze Sprawiedliwości"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Premiera Suicide Squad: Kill the Justice League. Dołącz do
+                  Legionu samobójców i staw czoło Lidze Sprawiedliwości
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Twórcy serii Batman: Arkham powracają z nową grą. Tym razem
+                  bohaterem nie jest Batman, Człowiek-Nietoperz, który spędza
+                  sen z powiek kryminalistom z Gotham, lecz cały oddział Legionu
+                  samobójców. Jednak w grze Suicide Squad: Kill the Justice
+                  League to oni grają tych „dobrych” i muszą pokonać „złą” Ligę
+                  Sprawiedliwości. Dołącz do Suicide Squad i zwalcz zło.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/news-imgs/news-img-6.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="SteelWeek z okazji IEM 2024. Złap atrakcyjne okazje na akcesoria
+                SteelSeries"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate">
+                  SteelWeek z okazji IEM 2024. Złap atrakcyjne okazje na
+                  akcesoria SteelSeries
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Święto e-sportu i atrakcyjne promocje na gamingowe akcesoria
+                  to wymarzone połączenie dla wielu graczy. Dlatego z okazji
+                  Intel Extreme Masters 2024 (IEM 2024) wspólnie z firmą
+                  SteelSeries dołączyliśmy do świętowania i przygotowaliśmy
+                  przeceny na peryferia tej marki. Poznaj szczegóły promocji
+                  SteelWeek.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/news-imgs/news-img-7.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="IEM 2024: podkręć dźwięk z atrakcyjnymi promocjami na gamingowe
+                audio od Edifier"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate">
+                  IEM 2024: podkręć dźwięk z atrakcyjnymi promocjami na
+                  gamingowe audio od Edifier
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Intel Extreme Masters 2024 wchodzi w decydującą fazę. Z każdym
+                  dniem e-sportowe emocje rosną coraz bardziej, a dzięki naszej
+                  promocji możesz się w nie wsłuchać, korzystając z gamingowego
+                  sprzętu audio firmy Edifier, który teraz, z okazji trwającego
+                  IEM 2024, kupisz w niższych niż zwykle cenach. Sprawdź
+                  szczegóły.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/news-imgs/news-img-8.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Odkryj moc zasilaczy i akumulatorów od VOLT Polska i skorzystaj
+                z rabatów do 50% w aplikacji"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Odkryj moc zasilaczy i akumulatorów od VOLT Polska i
+                  skorzystaj z rabatów do 50% w aplikacji
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  W tym tygodniu w naszej aplikacji możesz skorzystać z
+                  wyjątkowej promocji na wybrane produkty marki VOLT Polska,
+                  które zapewnią stabilne zasilanie i bezpieczeństwo dla Twojego
+                  sprzętu elektronicznego. Sprawdź szczegóły i skorzystaj z
+                  rabatów do 50%.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/news-imgs/news-img-9.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt=" Wyposaż się w dyski Crucial T500 oraz pracuj wydajniej i graj
+                szybciej"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate">
+                  Wyposaż się w dyski Crucial T500 oraz pracuj wydajniej i graj
+                  szybciej
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Niebagatelny wpływ na renderowanie 3D, wczytywanie gier i
+                  aplikacji czy ogólnie pracę komputera ma także dysk.
+                  Dzisiejsze nośniki półprzewodnikowe rozpędzają się do
+                  zawrotnych prędkości i oferują optymalną przestrzeń na
+                  ulubione programy oraz tworzone w nich treści i projekty.
+                  Postaw na wydajność, postaw na pojemne dyski SSD z serii
+                  Crucial T500.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/news-imgs/news-img-10.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt=". Poznaj rewolucyjne słuchawki Sennheiser Accentum Plus oraz
+                Momentum True Wireless 4"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate">
+                  Poznaj rewolucyjne słuchawki Sennheiser Accentum Plus oraz
+                  Momentum True Wireless 4
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  W świecie, gdzie muzyka i dźwięk otaczają nas z każdej strony,
+                  kluczowe staje się posiadanie słuchawek, które nie tylko
+                  zapewnią czystość brzmienia, ale również komfort i wygodę
+                  użytkowania przez cały dzień. Sennheiser wprowadził na rynek
+                  modele Accentum Plus oraz Momentum True Wireless 4, które
+                  obiecuje rewolucję w codziennym słuchaniu.Oba modele
+                  bezprzewodowych słuchawek są dostępne w ofercie sklepu x-kom,
+                  oferując miłośnikom muzyki i technologii zupełnie nowy wymiar
+                  dźwięku.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/news-imgs/news-img-11.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Promocja w gwiazdorskiej obsadzie. RTV nawet do 1500 zł taniej"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate">
+                  Promocja w gwiazdorskiej obsadzie. RTV nawet do 1500 zł taniej
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Przygotuj się na niezapomniane wieczory filmowe w zaciszu
+                  własnego domu z gwiazdorską promocją na sprzęty RTV. Dzięki
+                  niej możesz skorzystać z rabatów do 1500 zł i wyposażyć swój
+                  domowy salon w najnowocześniejszy sprzęt audiowizualny,
+                  osiągając oszałamiającą jakość obrazu i dźwięku, które
+                  przeniosą Cię prosto w serce akcji Twoich ulubionych filmów.
+                  Sprawdź szczegóły oferty.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/news-imgs/news-img-12.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Pytania i odpowiedzi – nowa funkcjonalność na naszej stronie"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate">
+                  Pytania i odpowiedzi – nowa funkcjonalność na naszej stronie
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Wprowadziliśmy nową funkcjonalność na naszej stronie. Teraz
+                  możesz zadawać pytania i otrzymywać odpowiedź od innych
+                  użytkowników. Oznacza to dla Ciebie jeszcze lepsze i bardziej
+                  interaktywne doświadczenie podczas wyboru sprzętu w x-komie.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/news-imgs/news-img-13.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Odbierz nawet 30% rabat na akcesoria SteelSeries przy zakupie
+                komputera"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate">
+                  Odbierz nawet 30% rabat na akcesoria SteelSeries przy zakupie
+                  komputera
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Przymierzasz się do zakupu (nowego) komputera, a jeśli wraz z
+                  zakupem laptopa lub PC potrzebujesz także np. wygodnego
+                  tandemu klawiatury i myszki, który pomoże Ci w osiąganiu jak
+                  najlepszych wyników w grach, to sprawdź naszą najnowszą
+                  ofertę. Zapoznaj się ze szczegółami promocji i zgarnij nawet
+                  30% rabat na akcesoria SteelSeries.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/news-imgs/news-img-14.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Trwa miesiąc promocji na smartfony Motoroli. Wybierz swój nowy
+                model"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate" style="height: 48px">
+                  Trwa miesiąc promocji na smartfony Motoroli. Wybierz swój nowy
+                  model
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Marzec wita słoneczną pogodą i niezwykłymi promocjami. Przez
+                  cały miesiąc smartfony Motoroli kupisz w nowych, obniżonych
+                  cenach. Od nowoczesnych składanych smartfonów Motorola razr,
+                  przez stylowe fotograficzne Motorola edge, po kultowe moto g.
+                  Poznaj szczegóły promocji i wymień swój smartfon na wiosnę.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="me-4 text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/news-imgs/news-img-15.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Zainspiruj się i spraw wyjątkowy prezent na Dzień Kobiet"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate">
+                  Zainspiruj się i spraw wyjątkowy prezent na Dzień Kobiet
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Dzień Kobiet to idealna okazja, aby sprawić upominek żonie,
+                  dziewczynie, mamie, córce, a także teściowej. Niech będzie to
+                  praktyczny prezent, którym dowiedziesz, że są dla Ciebie
+                  najważniejsze. Nie masz pomysłu? Nic nie szkodzi.
+                  Przedstawiamy garść inspiracji, które przypadną do gustu
+                  każdej Pani. Zobacz co przygotowaliśmy i upewnij się, że Twój
+                  prezent będzie naprawdę wyjątkowy.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="text-decoration-none" href="#">
+            <div class="card border-0 custom-card-discount">
+              <img
+                loading="lazy"
+                src="assets/news-imgs/news-img-16.webp"
+                class="card-img-top rounded-3 box-shadow"
+                alt="Kup laptop dla nauczyciela w x‑komie i zyskaj atrakcyjne bonusy"
+              />
+              <div class="card-body ps-1">
+                <h5 class="card-title fs-5 truncate">
+                  Kup laptop dla nauczyciela w x‑komie i zyskaj atrakcyjne
+                  bonusy
+                </h5>
+                <p class="card-text mt-1 truncate fs-7">
+                  Idealny laptop dla nauczyciela nie istn.. A jednak. Jeżeli
+                  szukasz sprzętu, który pomoże w nauczaniu, koniecznie sprawdź
+                  naszą ofertę laptopów dla nauczycieli. Przygotowaliśmy w niej
+                  propozycje, które nie tylko wpisują się w wymogi rządowego
+                  programu, ale również genialnie odnajdują się w kontekście
+                  nauczycielskich potrzeb. Co więcej tylko teraz, kupując
+                  wybrane z nich, możesz otrzymać wyjątkowe bonusy. Sprawdź
+                  szczegóły promocji dla nauczycieli w x-komie.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <hr class="d-lg-none" />
+        <div class="w-100 d-flex justify-content-center d-lg-none">
+          <div>
+            <a
+              class="text-decoration-none rounded-3 text-secondary show-all-btn p-2"
+              href="#"
+              >Pokaż wszystkie <i class="bi bi-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+        <button
+          class="d-none d-lg-block d-none d-lg-block bg-white rounded-3 text-black border-0 box-shadow position-absolute scroll-left"
+          style="top: 40% !important"
+          id="news-section__scrollable-items-prev"
+        >
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <button
+          class="d-none d-lg-block bg-white rounded-3 text-black border-0 box-shadow position-absolute scroll-right"
+          style="top: 40% !important"
+          id="news-section__scrollable-items-right"
+        >
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </section>
+      <!-- Bestsellers Section  -->
+      <section
+        class="container-lg mt-4 pt-3 border-bottom border-top bg-white pb-3 position-relative xl-no-top-border pb-lg-3"
+        id="bestsellers-section"
+      >
+        <h2
+          class="fs-1 mb-3 mb-lg-5 d-flex justify-content-between align-items-center"
+        >
+          Hity tygodnia
+          <a
+            class="d-none d-lg-inline fs-6 text-decoration-none rounded-3 text-secondary show-all-btn p-2"
+            href="#"
+            >Pokaż wszystkie <i class="bi bi-chevron-right"></i
+          ></a>
+        </h2>
+        <div
+          class="d-flex flex-nowrap overflow-auto scrollbar-none position-relative pt-1 ps-1 pe-1 pb-1"
+        >
+          <div
+            class="d-flex align-items-center justify-content-between flex-lg-wrap align-lg-content-between"
+            style="row-gap: 4rem"
+          >
+            <a
+              class="me-3 pt-5 pb-3 me-lg-0 text-decoration-none"
+              style="width: 20%"
+              href="#"
+            >
+              <div class="card border-0 custom-card mx-lg-auto">
+                <span
+                  class="position-absolute start-20 badge rounded-pill bg-danger badge-custom"
+                >
+                  Promocja
+                </span>
+                <img
+                  loading="lazy"
+                  src="assets/bestsellers-imgs/bestsellers-img-1.webp"
+                  class="card-img-top"
+                  alt="G4M3R HERO PLUS i7‑14700KF/32GB/2TB/RTX4070Ti/W11x"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    G4M3R HERO PLUS i7‑14700KF/32GB/2TB/RTX4070Ti/W11x
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">10 500,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="me-3 pt-5 pb-3 me-lg-0 text-decoration-none"
+              style="width: 20%"
+              href="#"
+            >
+              <div class="card border-0 custom-card mx-lg-auto">
+                <span
+                  class="position-absolute start-20 badge rounded-pill bg-danger badge-custom"
+                >
+                  Promocja
+                </span>
+                <img
+                  loading="lazy"
+                  src="assets/bestsellers-imgs/bestsellers-img-2.webp"
+                  class="card-img-top"
+                  alt="Dell Inspiron 3520 i5‑1235U/16GB/1TB/Win11 120Hz Srebrny"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Dell Inspiron 3520 i5‑1235U/16GB/1TB/Win11 120Hz Srebrny
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">2 999,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="me-3 pt-5 pb-3 me-lg-0 text-decoration-none"
+              style="width: 20%"
+              href="#"
+            >
+              <div class="card border-0 custom-card mx-lg-auto">
+                <span
+                  class="position-absolute start-20 badge rounded-pill bg-danger badge-custom"
+                >
+                  Promocja
+                </span>
+                <img
+                  loading="lazy"
+                  src="assets/bestsellers-imgs/bestsellers-img-3.webp"
+                  class="card-img-top"
+                  alt="Dell Vostro 3710 SFF i5‑12400/16GB/512/Win11P"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Dell Vostro 3710 SFF i5‑12400/16GB/512/Win11P
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">3 099,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="me-3 pt-5 pb-3 me-lg-0 text-decoration-none"
+              style="width: 20%"
+              href="#"
+            >
+              <div class="card border-0 custom-card mx-lg-auto">
+                <span
+                  class="position-absolute start-20 badge rounded-pill bg-danger badge-custom"
+                >
+                  Promocja
+                </span>
+                <img
+                  loading="lazy"
+                  src="assets/bestsellers-imgs/bestsellers-img-4.webp"
+                  class="card-img-top"
+                  alt="Apple iPad 10,9 10gen 64GB Wi‑Fi Silver"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Apple iPad 10,9" 10gen 64GB Wi‑Fi Silver
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">1 949,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="me-3 pt-5 pb-3 me-lg-0 text-decoration-none"
+              style="width: 20%"
+              href="#"
+            >
+              <div class="card border-0 custom-card mx-lg-auto">
+                <span
+                  class="position-absolute start-20 badge rounded-pill bg-danger badge-custom"
+                >
+                  Promocja
+                </span>
+                <img
+                  loading="lazy"
+                  src="assets/bestsellers-imgs/bestsellers-img-5.webp"
+                  class="card-img-top"
+                  alt="Motorola edge 30 ultra 12/256GB Interstellar Black 144Hz"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Motorola edge 30 ultra 12/256GB Interstellar Black 144Hz
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">2 599,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="me-3 pt-5 pb-3 me-lg-0 text-decoration-none"
+              style="width: 20%"
+              href="#"
+            >
+              <div class="card border-0 custom-card mx-lg-auto">
+                <span
+                  class="position-absolute start-20 badge rounded-pill bg-danger badge-custom"
+                >
+                  Promocja
+                </span>
+                <img
+                  loading="lazy"
+                  src="assets/bestsellers-imgs/bestsellers-img-6.webp"
+                  class="card-img-top"
+                  alt="Samsung QE55Q77C + kabel hdmi"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Samsung QE55Q77C + kabel hdmi
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">3 399,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="me-3 pt-5 pb-3 me-lg-0 text-decoration-none"
+              style="width: 20%"
+              href="#"
+            >
+              <div class="card border-0 custom-card mx-lg-auto">
+                <span
+                  class="position-absolute start-20 badge rounded-pill bg-danger badge-custom"
+                >
+                  Promocja
+                </span>
+                <img
+                  loading="lazy"
+                  src="assets/bestsellers-imgs/bestsellers-img-7.webp"
+                  class="card-img-top"
+                  alt="Dell G2724D"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Dell G2724D Super Mega
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">1 399,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="me-3 pt-5 pb-3 me-lg-0 text-decoration-none"
+              style="width: 20%"
+              href="#"
+            >
+              <div class="card border-0 custom-card mx-lg-auto">
+                <span
+                  class="position-absolute start-20 badge rounded-pill bg-danger badge-custom"
+                >
+                  Promocja
+                </span>
+                <img
+                  loading="lazy"
+                  src="assets/bestsellers-imgs/bestsellers-img-8.webp"
+                  class="card-img-top"
+                  alt="Gainward GeForce RTX 4070 Super Ghost 12GB GDDR6X"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Gainward GeForce RTX 4070 Super Ghost 12GB GDDR6X
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">2 799,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="me-3 pt-5 pb-3 me-lg-0 text-decoration-none"
+              style="width: 20%"
+              href="#"
+            >
+              <div class="card border-0 custom-card mx-lg-auto">
+                <span
+                  class="position-absolute start-20 badge rounded-pill bg-danger badge-custom"
+                >
+                  Promocja
+                </span>
+                <img
+                  loading="lazy"
+                  src="assets/bestsellers-imgs/bestsellers-img-9.webp"
+                  class="card-img-top"
+                  alt="HP Victus 15 Ryzen 5‑5600H/16GB/512 RTX3050 144Hz"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    HP Victus 15 Ryzen 5‑5600H/16GB/512 RTX3050 144Hz
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">2 999,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="pt-5 pb-3 text-decoration-none"
+              style="width: 20%"
+              href="#"
+            >
+              <div class="card border-0 custom-card mx-lg-auto">
+                <span
+                  class="position-absolute start-20 badge rounded-pill bg-danger badge-custom"
+                >
+                  Promocja
+                </span>
+                <img
+                  loading="lazy"
+                  src="assets/bestsellers-imgs/bestsellers-img-10.webp"
+                  class="card-img-top"
+                  alt="Apple iPhone 13 128GB Starlight"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">
+                    Apple iPhone 13 128GB Starlight
+                  </h5>
+                  <div
+                    class="card-text d-flex justify-content-between align-items-center mt-3 position-relative"
+                  >
+                    <p class="mb-0">2 649,00 zł</p>
+                    <i
+                      class="bi bi-cart-plus d-none border border-success rounded-3 text-success px-2 py-1 position-absolute end-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Brands Section  -->
+      <section
+        class="container-lg mt-4 pt-3 border-bottom border-top bg-white pb-3 position-relative xl-no-top-border pb-lg-3"
+      >
+        <h2 class="fs-1 mb-5 d-flex justify-content-between align-items-center">
+          Strefa marek
+          <a
+            class="d-none d-lg-inline fs-6 text-decoration-none rounded-3 text-secondary show-all-btn p-2"
+            href="#"
+            >Pokaż wszystkie <i class="bi bi-chevron-right"></i
+          ></a>
+        </h2>
+        <div
+          class="d-flex flex-nowrap overflow-auto scrollbar-none align-items-center pb-3 mb-4 mx-auto justify-content-xl-center"
+          id="brands-section__scrollable-container"
+        >
+          <a
+            class="px-4 text-decoration-none"
+            href="#"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-title="DJI"
+            ><img
+              loading="lazy"
+              style="max-width: 5rem"
+              src="assets/brands-imgs/brand-1.svg"
+              alt="DJI link"
+          /></a>
+          <a
+            class="px-4 text-decoration-none"
+            href="#"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-title="Microsoft"
+            ><img
+              loading="lazy"
+              style="max-width: 5rem"
+              src="assets/brands-imgs/brand-2.svg"
+              alt="Microsoft Link"
+          /></a>
+          <a
+            class="px-4 text-decoration-none"
+            href="#"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-title="Xiaomi"
+            ><img
+              loading="lazy"
+              style="max-width: 5rem"
+              src="assets/brands-imgs/brand-3.svg"
+              alt="Xiaomi link"
+          /></a>
+          <a
+            class="px-4 text-decoration-none"
+            href="#"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-title="Samsung"
+            ><img
+              loading="lazy"
+              style="max-width: 5rem"
+              src="assets/brands-imgs/brand-4.svg"
+              alt="Samsung link"
+          /></a>
+          <a
+            class="px-4 text-decoration-none"
+            href="#"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-title="Microsoft"
+            ><img
+              loading="lazy"
+              style="max-width: 5rem"
+              src="assets/brands-imgs/brand-5.svg"
+              alt="Sony link"
+          /></a>
+          <a
+            class="px-4 text-decoration-none"
+            href="#"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-title="Nvidia"
+            ><img
+              loading="lazy"
+              style="max-width: 5rem"
+              src="assets/brands-imgs/brand-6.svg"
+              alt="Nvidia link"
+          /></a>
+          <a
+            class="px-4 text-decoration-none"
+            href="#"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-title="Apple"
+            ><img
+              loading="lazy"
+              style="max-width: 5rem"
+              src="assets/brands-imgs/brand-7.svg"
+              alt="Apple link"
+          /></a>
+          <a
+            class="px-4 text-decoration-none"
+            href="#"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-title="Silver monkey"
+            ><img
+              loading="lazy"
+              style="max-width: 5rem"
+              src="assets/brands-imgs/brand-8.svg"
+              alt="Silver monkey link"
+          /></a>
+          <a
+            class="px-4 text-decoration-none"
+            href="#"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-title="G4mer"
+            ><img
+              loading="lazy"
+              style="max-width: 5rem"
+              src="assets/brands-imgs/brand-9.svg"
+              alt="G4mer link"
+          /></a>
+          <a
+            class="px-4 text-decoration-none"
+            href="#"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-title="Alto"
+            ><img
+              loading="lazy"
+              style="max-width: 5rem"
+              src="assets/brands-imgs/brand-10.svg"
+              alt="alto link"
+          /></a>
+        </div>
+        <button
+          class="d-none d-lg-block d-xl-none d-none d-lg-block bg-white rounded-3 text-black border-0 box-shadow position-absolute scroll-left"
+          style="top: 53%"
+          id="brands-section__items-prev"
+        >
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <button
+          class="d-none d-lg-block d-xl-none bg-white rounded-3 text-black border-0 box-shadow position-absolute scroll-right"
+          style="top: 53%"
+          id="brands-section__items-next"
+        >
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </section>
+    </main>
+    <!-- Footer  -->
+    <footer
+      class="container-lg mt-4 pt-3 border-bottom border-top bg-white pb-3 position-relative xl-no-top-border"
+    >
+      <!--  Newsletter    -->
+      <div
+        class="bg-light rounded-4 px-4 py-4 d-flex flex-column align-items-center text-center m-1 flex-lg-row justify-content-between box-shadow"
+      >
+        <div class="d-flex flex-column align-items-lg-start">
+          <h3>Newsletter</h3>
+          <p>Nie przegap żadnej promocji, zdobywaj dodatkowe rabaty.</p>
+          <form class="d-flex needs-validation" novalidate>
+            <div class="input-group position-relative">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Twój email"
+                aria-label="Email"
+                aria-describedby="button-addon2"
+                required
+              />
+              <button
+                class="btn btn-primary rounded-end"
+                type="submit"
+                id="liveAlertBtn"
+              >
+                Zapisz się
+              </button>
+              <div class="invalid-feedback">
+                Proszę o wprowadzenie adresu mailowego.
+              </div>
+            </div>
+          </form>
+        </div>
+        <div>
+          <img
+            class="align-self-end d-none d-lg-block"
+            src="assets/footer-assets/1.png"
+            alt=""
+            style="height: 133px"
+          />
+        </div>
+      </div>
+      <!--   SaleMasters   -->
+      <div
+        class="mx-1 mt-4 bg-light rounded-4 px-4 py-4 d-flex flex-column align-items-center text-center box-shadow align-items-lg-center justify-content-lg-between flex-lg-row"
+      >
+        <div
+          class="d-lg-flex flex-column justify-content-between align-items-center align-items-lg-start"
+        >
+          <a href="#"
+            ><img
+              loading="lazy"
+              class="w-100"
+              src="assets/sale-masters.svg"
+              alt="Sale Masters logo"
+          /></a>
+          <h3 class="mt-3 h6">Polecaj i zarabiaj</h3>
+          <p>Dołącz do naszego programu partnerskiego.</p>
+          <a href="#"
+            ><button class="btn btn-outline-danger px-3 py-2">
+              Zacznij zarabiać
+            </button></a
+          >
+        </div>
+        <div class="me-4">
+          <img
+            class="d-none d-lg-block align-self-end pe-2"
+            src="assets/footer-assets/2.png"
+            alt=""
+            style="height: 133px"
+          />
+        </div>
+      </div>
+      <!--   about company nav   -->
+      <nav>
+        <div class="d-lg-flex justify-content-between mt-5 px-lg-3">
+          <div class="d-lg-none">
+            <h6 class="fs-3">Kontakt</h6>
+            <address class="p-2 mt-3">
+              <p class="fs-6 d-flex align-items-center">
+                <i class="bi bi-telephone-fill me-3 fs-2"></i> 12 345 67 89
+              </p>
+              <p class="fs-6 d-flex align-items-center">
+                <i class="bi bi-envelope-at-fill me-3 fs-2"></i>
+                cyberzone@gmail.com
+              </p>
+              <p class="fs-6 d-flex align-items-center">
+                <i class="bi bi-whatsapp me-3 fs-2"></i> WhatsApp
+              </p>
+              <p class="fs-6 d-flex align-items-center">
+                <i class="bi bi-geo-alt me-3 fs-2"></i> Salony cyberzone
+              </p>
+            </address>
+
+            <div
+              class="accordion accordion-flush d-lg-none"
+              id="accordionFlushExample"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Zamówienia
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Dostawa</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Raty</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Leasing</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Ubezpieczenia</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >TaxFree</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Montaż</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Zwroty i reklamacje</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Najczęściej zadawane pytania</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Promocje i inspiracje
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Wyprzedaż</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Gorący strzał</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >un.Box</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Promocje</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Karty podarunkowe</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Poradniki</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Aktualności</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    CYBERZONE
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >O nas</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Regulamin</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Polityka prywatności</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Polityka cookies</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Regulamin newslettera</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Biuro prasowe</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Zamówienia publiczne</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Zakupy dla firm</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Współpraca marketingowa</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Geex</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Forum</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Kariera</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Kontakt</a
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <a class="link-dark text-decoration-none" href="#"
+                          >Realizowane projekty</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-lg-block w-25">
+            <h6>Kontakt</h6>
+            <address class="mb-2 mt-3">
+              <p class="fs-6 d-flex align-items-center">
+                <i class="bi bi-telephone-fill me-2 fs-4"></i> 12 345 67 89
+              </p>
+              <p class="fs-6 d-flex align-items-center">
+                <i class="bi bi-envelope-at-fill me-2 fs-4"></i>
+                cyberzone@gmail.com
+              </p>
+              <p class="fs-6 d-flex align-items-center">
+                <i class="bi bi-whatsapp me-2 fs-4"></i> WhatsApp
+              </p>
+              <p class="fs-6 d-flex align-items-center">
+                <i class="bi bi-geo-alt me-2 fs-4"></i> Salony cyberzone
+              </p>
+            </address>
+          </div>
+          <ul class="d-none d-lg-block w-25 list-unstyled">
+            <li class="mb-4"><h6>Zamówienia</h6></li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Dostawa</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Raty</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Leasing</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Ubezpieczenia</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >axFree</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Montaż</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Zwroty i reklamacje</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Najczęściej zadawane pytania</a
+              >
+            </li>
+          </ul>
+          <ul class="d-none d-lg-block w-25 text-decoration-none list-unstyled">
+            <li class="mb-4"><h6>Promocje i inspiracje</h6></li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Wyprzedaż</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Gorący strzał</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >un.Box</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Promocje</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Karty podarunkowe</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Poradniki</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Aktualności</a
+              >
+            </li>
+          </ul>
+          <ul class="d-none d-lg-block w-25 text-decoration-none list-unstyled">
+            <li class="mb-4"><h6>cyberzone</h6></li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >O nas</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Regulamin</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Polityka prywatności</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Polityka cookies</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Regulamin newslettera</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Biuro prasowe</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Zamówienia publiczne</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Zakup dla firm</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Współpraca marketingowa</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Geex</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Forum</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Kariera</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Kontakt</a
+              >
+            </li>
+            <li class="mb-2">
+              <a
+                class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href=""
+                >Realizowane projekty</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--  copyright    -->
+      <h6 class="copyright fs-7 mt-3 mb-0 text-center">
+        ~ cyberzone <span style="font-family: Arial, sans-serif">&copy;</span> ~
+      </h6>
+    </footer>
+    <!-- nested Offcanvas  -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="components_offcanvas"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header header__offcanvas-header">
+        <h5 class="offcanvas-title">Laptopy i komputery</h5>
+        <button
+          type="button"
+          class="btn-close offcanvas-btn-close-customization"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="text-center">
+          <button class="btn btn-outline-secondary" type="button">
+            Pokaż laptopy i komputery
+          </button>
+        </div>
+        <ul class="navbar-nav justify-content-end flex-grow-1 mt-3 pb-2">
+          <li class="mb-2">
+            <a
+              data-bs-toggle="offcanvas"
+              role="button"
+              aria-controls="components_offcanvas"
+              class="nav-link active d-flex align-items-center"
+              aria-current="page"
+              href="#components_offcanvas"
+            >
+              Laptopy/Notebooki/Ultrabooki
+              <span class="fs-7 ms-2 text-body-tertiary">(2104)</span>
+            </a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link active d-flex align-items-center" href="#">
+              Laptopy 2 w 1
+              <span class="fs-7 ms-2 text-body-tertiary">(1104)</span></a
+            >
+          </li>
+          <li class="mb-2">
+            <a class="nav-link active d-flex align-items-center" href="#"
+              >Laptopy biznesowe
+              <span
+                class="header__nested-offcanvas-quantity ms-2 text-body-tertiary"
+                >(504)</span
+              ></a
+            >
+          </li>
+          <li class="mb-2">
+            <a class="nav-link active d-flex align-items-center" href="#"
+              >Komputery stacjonarne
+              <span
+                class="header__nested-offcanvas-quantity ms-2 text-body-tertiary"
+                >(3104)</span
+              ></a
+            >
+          </li>
+          <li class="mb-2">
+            <a class="nav-link active d-flex align-items-center" href="#"
+              >Komputery gamingowe
+              <span
+                class="header__nested-offcanvas-quantity ms-2 text-body-tertiary"
+                >(2104)</span
+              >
+            </a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link active d-flex align-items-center" href="#"
+              >Tablety
+              <span
+                class="header__nested-offcanvas-quantity ms-2 text-body-tertiary"
+                >(2114)</span
+              ></a
+            >
+          </li>
+          <li class="mb-2">
+            <a class="nav-link active d-flex align-items-center" href="#"
+              >Serwery i storage
+              <span
+                class="header__nested-offcanvas-quantity ms-2 text-body-tertiary"
+                >(104)</span
+              ></a
+            >
+          </li>
+          <li class="mb-2">
+            <a class="nav-link active d-flex align-items-center" href="#"
+              >Programy
+              <span
+                class="header__nested-offcanvas-quantity ms-2 text-body-tertiary"
+                >(54)</span
+              ></a
+            >
+          </li>
+          <li class="mb-2">
+            <a class="nav-link active d-flex align-items-center" href="#"
+              >Akcesoria komputerowe
+              <span
+                class="header__nested-offcanvas-quantity ms-2 text-body-tertiary"
+                >(110)</span
+              ></a
+            >
+          </li>
+          <li class="mb-2">
+            <a class="nav-link active d-flex align-items-center" href="#"
+              >Akcesoria do laptopów
+              <span
+                class="header__nested-offcanvas-quantity ms-2 text-body-tertiary"
+                >(50)</span
+              >
+            </a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link active d-flex align-items-center" href="#"
+              >Torby i etui
+              <span
+                class="header__nested-offcanvas-quantity ms-2 text-body-tertiary"
+                >(20)</span
+              >
+            </a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link active d-flex align-items-center" href="#"
+              >Stacje dokujące do laptopów
+              <span
+                class="header__nested-offcanvas-quantity ms-2 text-body-tertiary"
+                >(10)</span
+              >
+            </a>
+          </li>
+        </ul>
+        <p class="d-inline-flex gap-1">
+          <a
+            class="btn btn-primary"
+            data-bs-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Dodatkowe informacje
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card border-0 card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+            beatae blanditiis consequuntur dolorem, excepturi magni maiores
+            maxime non porro provident ratione totam voluptatibus! Explicabo
+            magnam nulla quam quo vel vero?
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Newsletter alert    -->
+    <div id="liveAlertPlaceholder"></div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="contatModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Pomoc i kontakt
+            </h1>
+          </div>
+          <div class="modal-body">
+            Szanowny kliencie łączymy cię z naszym konsultantem, informujemy ze
+            wszystkie rozmowy są nagrywane.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Anuluj
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Toast   -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header bg-primary box-shadow">
+          <strong class="me-auto"> Promocja !!!</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">
+          <p>
+            Szanowny kliencie koniecznie sprawdź naszą sekcję z promocjami i
+            oszczędzaj !!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
